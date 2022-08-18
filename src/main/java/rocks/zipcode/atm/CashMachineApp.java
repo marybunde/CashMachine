@@ -11,6 +11,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.scene.layout.FlowPane;
 
+import java.awt.*;
+
 /**
  * @author ZipCodeWilmington
  */
@@ -19,7 +21,7 @@ public class CashMachineApp extends Application {
     private TextField field = new TextField();
     private CashMachine cashMachine = new CashMachine(new Bank());
 
-    private Parent createContent() {
+    private VBox createContent() {
         VBox vbox = new VBox(10);
         vbox.setPrefSize(600, 600);
 
